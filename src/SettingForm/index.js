@@ -107,7 +107,7 @@ const SettingForm = ({createVisualization}) => {
               </div>
 
               <div className='form-group'>
-                <label>To</label>
+                <label>To (can be left empty)</label>
                 <div className="field-columns">
                   <div className="field">
                     <Select label="Process"
