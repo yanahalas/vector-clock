@@ -72,7 +72,7 @@ const SettingForm = ({createVisualization}) => {
     <div className='SettingForm'>
       <div className='form-group'>
         <Select
-          label="Number of Processors"
+          label="Number of Processes"
           value={processorsCount}
           options={['2', '3', '4', '5', '6', '7', '8', '9', '10']}
           enhanced
