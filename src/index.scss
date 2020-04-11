@@ -1,0 +1,12 @@
+:root {
+  --mdc-theme-primary: #303030;
+  --mdc-theme-secondary: #661fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+}
