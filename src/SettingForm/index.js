@@ -93,7 +93,7 @@ const SettingForm = ({createVisualization}) => {
                             enhanced
                             value={event.fromProcess}
                             onChange={(e) => updateEventByIndex(index, 'fromProcess', e.currentTarget.value)}
-                            options={processors}/>
+                            options={processors.filter(cur => cur !== parseInt(event.toProcess))}/>
                   </div>
 
                   <div className="field">
@@ -107,19 +107,21 @@ const SettingForm = ({createVisualization}) => {
               </div>
 
               <div className='form-group'>
-                <label>To (can be left empty)</label>
+                <label>To (optional)</label>
                 <div className="field-columns">
                   <div className="field">
                     <Select label="Process"
                             enhanced
+                            disabled={!event.fromProcess}
                             value={event.toProcess}
                             onChange={(e) => updateEventByIndex(index, 'toProcess', e.currentTarget.value)}
-                            options={processors}/>
+                            options={processors.filter(cur => cur !== parseInt(event.fromProcess))}/>
                   </div>
 
                   <div className="field">
                     <Select label="Position"
                             enhanced
+                            disabled={!event.fromProcess}
                             value={event.toTime}
                             onChange={(e) => updateEventByIndex(index, 'toTime', e.currentTarget.value)}
                             options={timeOptions}/>
