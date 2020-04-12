@@ -27,11 +27,13 @@ const Table = ({timeStamps}) => {
               <Fragment key={index}>
                 <DataTableRow>
                   <DataTableCell>Process {process}</DataTableCell>
-                  {
-                    timeStamps[process].map((event, eventIndex) => (
-                      <DataTableCell key={`process-${index}-event-${eventIndex}`}>({event.join(', ')})</DataTableCell>
-                    ))
-                  }
+                  <DataTableCell>
+                    {timeStamps[process].map((event, eventIndex) => (
+                      <Fragment key={eventIndex}>
+                        <span>({event.join(', ')}) </span>
+                      </Fragment>
+                    ))}
+                  </DataTableCell>
                 </DataTableRow>
               </Fragment>
             ))
