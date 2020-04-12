@@ -18,6 +18,7 @@ const Table = ({timeStamps}) => {
         <DataTableHead>
           <DataTableRow>
             <DataTableHeadCell>Process</DataTableHeadCell>
+            <DataTableHeadCell>Vector Clock Timestamps</DataTableHeadCell>
           </DataTableRow>
         </DataTableHead>
         <DataTableBody>

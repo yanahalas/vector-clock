@@ -90,7 +90,7 @@ const SettingForm = ({createVisualization}) => {
                 <div className="field-columns">
                   <div className="field">
                     <Select label="Process"
-                            enhanced
+                            style={{fontSize: 20}}
                             value={event.fromProcess}
                             onChange={(e) => updateEventByIndex(index, 'fromProcess', e.currentTarget.value)}
                             options={processors.filter(cur => cur !== parseInt(event.toProcess))}/>
@@ -111,7 +111,7 @@ const SettingForm = ({createVisualization}) => {
                 <div className="field-columns">
                   <div className="field">
                     <Select label="Process"
-                            enhanced
+                            style={{fontSize: 20}}
                             disabled={!event.fromProcess}
                             value={event.toProcess}
                             onChange={(e) => updateEventByIndex(index, 'toProcess', e.currentTarget.value)}

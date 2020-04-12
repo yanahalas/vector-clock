@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Stage, Layer, Circle, Arrow, Text } from "react-konva";
 
-const canvasWidth = 920;
+const canvasWidth = 960;
 const lineWidth = 900;
 const leftMargin = 40;
 const lineMargin = 60;
